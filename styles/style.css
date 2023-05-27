@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: MontserratB;
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: MontserratL;
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+body, header { 
+    font-family: Montserrat;
+    font-size: 36px;
+}
+.container { 
+    width: 1680px;
+    margin: 0 auto;
+}
+/* .animItem { 
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+.active { 
+    transform: translate(0px,0px);
+    opacity: 1;
+} */
+img { 
+    width: 1680px;
+    background-size: cover;
+}
+h1, h2, h4 { 
+    font-weight: 400;
+}
+h1 { 
+    text-transform: uppercase;
+    font-size: 128px;
+}
+h2 { 
+    font-size: 75px;
+    text-align: center;
+}
+h3 { 
+    font-size: MontserratB;
+}
+ /* HEADER-START */
+header {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-h1 { 
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+.header-h1.active { 
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.header-h2 { 
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease .4s;
+    font-family: MontserratL;
+}
+.header-h2.active { 
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+/* HEADER-END */
+
+/* BODY-START */
+.block { 
+    margin: 90px 0 0 0;
+}
+.body-h2 { 
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+}
+.body-h2.active { 
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+img { 
+    margin: 25px 0 75px 0;
+}
+.block-text { 
+    margin: 25px 0 0 0;
+    display: flex;
+}
+a { 
+    margin: 0 0 0 779px;
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+a:hover {
+    background-size: 100% 2px;
+}
+
+.anim-show { 
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease .4s;
+}
+.anim-show.active, .active .anim-show  {
+    opacity: 1;
+    transform: translate(0px,0px);
+}
+/* BODY-END */
+
+/* FOOTER-START */
+footer  {
+    margin: 300px 0 0 0;
+    text-align: center;
+    background: #D9D9D9;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* FOOTER-END */
